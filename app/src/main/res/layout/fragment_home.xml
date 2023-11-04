@@ -7,16 +7,42 @@
 
     <Button
         android:id="@+id/buttonLocation1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
         android:text="Location 1"/>
 
     <Button
         android:id="@+id/buttonLocation2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Location 2"/>
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Location 1"/>
 
-    <!-- Add more buttons for additional locations -->
+    <Button
+        android:id="@+id/buttonLocation3"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Location 1"/>
+
+    <Button
+        android:id="@+id/buttonLocation4"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Location 1"/>
+
+    <Button
+        android:id="@+id/buttonLocation5"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Location 1"/>
 
 </LinearLayout>
