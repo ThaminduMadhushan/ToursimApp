@@ -41,7 +41,7 @@ public class signup extends AppCompatActivity {
         name = findViewById(R.id.username);
         email = findViewById(R.id.emailadd);
         cpassword = findViewById(R.id.createpass);
-        conpass = findViewById(R.id.confpass)
+        conpass = findViewById(R.id.confpass);
 
 
         //clickable text
@@ -98,7 +98,7 @@ public class signup extends AppCompatActivity {
             return;
         }
 
-        auth.createUserWithEmailAndPassword(userEmail,userPassword)
+        auth.createUserWithEmailAndPassword(userEmail,createPassword)
                 .addOnCompleteListener(signup.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
