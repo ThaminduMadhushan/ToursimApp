@@ -15,16 +15,16 @@ public class HomeScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_screen);
+        setContentView(R.layout.home_screen);
 
         initRecyclerView();
     }
 
     private void initRecyclerView() {
         ArrayList<PopularDomain> items = new ArrayList<>();
-        items.add(new PopularDomain("Colombo", "Description 1", "pic1"));
-        items.add(new PopularDomain("Colombo", "Description 2", "pic2"));
-        items.add(new PopularDomain("Colombo", "Description 3", "pic3"));
+        items.add(new PopularDomain("Colombo",  "pic1"));
+        items.add(new PopularDomain("Colombo",  "pic2"));
+        items.add(new PopularDomain("Colombo",  "pic3"));
 
         recyclerViewPopular = findViewById(R.id.view_top);
         recyclerViewPopular.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
