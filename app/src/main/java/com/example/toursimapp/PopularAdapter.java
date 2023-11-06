@@ -30,7 +30,7 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         PopularDomain item = items.get(position);
         holder.titleText.setText(item.getTitle());
-        holder.descriptionText.setText(item.getDescription());
+
         Glide.with(holder.itemView.getContext()).load(holder.itemView.getContext().getResources().getIdentifier(item.getPic(), "drawable", holder.itemView.getContext().getPackageName())).into(holder.picImg);
     }
 
@@ -41,14 +41,12 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.ViewHold
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView titleText;
-        TextView descriptionText;
         ImageView picImg;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             titleText = itemView.findViewById(R.id.titleText);
-            descriptionText = itemView.findViewById(R.id.descriptionText);
-            picImg = itemView.findViewById(R.id.imageView);
+            picImg = itemView.findViewById(R.id.picImg);
         }
     }
 }
